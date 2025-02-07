@@ -1,0 +1,159 @@
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.App {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.search {
+    width: 500px;
+    padding: 12px 24px;
+    background-color: transparent;
+    color: #3f4554;
+    box-shadow: inset 3px 3px 7px #ddd6e8;
+    border: 2px solid #3f4554;
+    font-size: 18px;
+    font-family: "Open Sans", serif;
+}
+
+.imgRecipe {
+    width: 450px;
+    height: 300px;
+}
+
+.recipes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+li {
+    background-color: #ddd6e8;
+    margin: 10px;
+    padding: 10px;
+    list-style-type: none;
+    font-family: "Open Sans", serif;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+h1 {
+    color: #dbecc4;
+    font-size: 65px;
+    text-shadow: 2px 2px 5px #3f4554;
+    margin-bottom: 0px;
+    font-family: "Poppins", serif;
+}
+
+h2 {
+    font-family: "Open Sans", serif;
+    font-size: 40px;
+    color: #64d100;
+    text-shadow: 2px 2px 5px #dbecc4;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+p {
+    font-family: "Open Sans", serif;
+    font-size: 20px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    border: none;
+    background-color: #dbecc4;
+}
+
+.source {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+
+.instruction {
+    background-color: #64d100;
+    padding: 20px;
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    color: #dbecc4;
+    font-family: "Open Sans", serif;
+    font-size: 18px;
+}
+
+.instruction:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000000;
+}
+
+.from {
+    margin-left: 30px;
+    font-size: 20px;
+    text-decoration: underline 3px solid #64d100;
+}
+
+#edamam-badge {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    margin-top: 20px;
+}
+
+@media (max-width:500px) {
+    video {
+        height: 100%;
+    }
+
+    h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .search {
+        width: 300px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    .imgRecipe {
+        width: 300px;
+        height: 250px;
+    }
+
+    .source {
+        margin-top: 20px;
+    }
+
+    .instruction {
+        width: 180px;
+    }
+}
